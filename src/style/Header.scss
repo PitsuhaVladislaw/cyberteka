@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../assets/font/Inter/static/Inter-Medium.ttf);
+}
+
+%set-text {
+    font-family: 'Inter';
+    color: #FFFFFF;
+    margin: 0;
+}
+
+header {
+    width: auto;
+    height: 1080px;
+    background:
+        linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #35005F 100%),
+        linear-gradient(180deg, #E637B7 0%, #8F00FF 100%),
+        url(../assets/img/computerClub.jpg);
+    background-size: cover;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 58px;
+
+        article {
+            display: flex;
+            justify-content: flex-start;
+            width: auto;
+            gap: 46.96px;
+
+            img {
+                width: 129.04px;
+                height: 162px;
+            }
+
+            h1 {
+                @extend %set-text;
+                font-weight: 600;
+                font-size: 45px;
+                font-style: italic;
+                line-height: 54.46px;
+                text-transform: uppercase;
+
+                span {
+                    font-size: 100px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 121.02px;
+                }
+            }
+        }
+    }
+}
